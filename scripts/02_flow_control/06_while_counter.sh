@@ -5,7 +5,7 @@ contador=1
 # lee el número
 read -p "Escribe un número natural: " numero
 
-# comprueba que se indicó un número natural
+# comprueba si es un número natural
 if [[ ! $numero =~ ^[1-9][0-9]*$ ]]; then
 	echo "Error: escriba un número natural (1,2,3...)"
 	exit 1
