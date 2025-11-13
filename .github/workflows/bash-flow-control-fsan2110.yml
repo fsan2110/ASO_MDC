@@ -6,8 +6,8 @@ on:
       - 'scripts/02_flow_control/**/*.sh'
 
 jobs:
-  validate:
-    runs-on: debian-latest
+  exec-scripts:
+    runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
         uses: actions/checkout@v5
