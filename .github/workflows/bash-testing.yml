@@ -1,0 +1,19 @@
+name: Pruebas de los scripts
+
+on:
+  push:
+    paths:
+      - 'scripts/**/*.sh'
+
+jobs:
+  exec-scripts:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v5
+
+      - name: Ejecutar los scripts de pruebas
+        run: |
+          find scripts/testing -type f -name "test-*.sh" | bash
+
+
