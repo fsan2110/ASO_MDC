@@ -26,3 +26,4 @@ aha=Eureka
 echo "$aha"
 
 touch $PWD/funciona.txt
+rm $PWD/funciona.txt
