@@ -1,6 +1,6 @@
 #!/bin/bash
 source "scripts/testing/base_test.sh"
-SCRIPT="scripts/02_flow_control/05_for_files.sh"
+SCRIPT="../scripts/02_flow_control/05_for_files.sh"
 
 # carpeta temporal para probar el script
 mkdir 05_for_files.tmp
@@ -19,7 +19,8 @@ test_case "muestra los ficheros correctos" \
   "*fichero 0*" \
   0
 
-# TODO borra la carpeta temporal
+# elimina la carpeta temporal
+cd .. && rm -r 05_for_files.tmp
 
 
 summary || exit 1
