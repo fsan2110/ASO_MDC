@@ -1,0 +1,8 @@
+[Unit]
+Description=Ejecuta el script de gestion_usuarios
+
+[Service]
+Type=oneshot
+ExecStart=script/05_automation/gestion_usuarios.sh
+User=root
+Group=root
