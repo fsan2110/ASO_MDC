@@ -6,3 +6,6 @@ Type=oneshot
 ExecStart=script/05_automation/gestion_usuarios.sh
 User=root
 Group=root
+
+[Install]
+WantedBy=multi-user.target
